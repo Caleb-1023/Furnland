@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState,useEffect } from "react"
 import { Col,Row,Tabs } from "react-bootstrap";
 import Tab from "react-bootstrap/Tab"
@@ -15,6 +16,8 @@ export const Order=()=>{
     const [delivered,setdelivered]= useState<ordertype[]| null>(null);
     const [confirmed,setconfirmed]= useState<ordertype[]| null>(null);
     const [pending,setpending]= useState<ordertype[]| null>(null);
+
+    console.log(sent)
      
     const config={
         headers:{

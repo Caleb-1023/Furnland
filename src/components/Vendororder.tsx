@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState,useEffect } from "react"
 import { Col,Row,Tabs } from "react-bootstrap";
 import Tab from "react-bootstrap/Tab"
@@ -91,6 +92,8 @@ const send=async(id:number)=>{
         }
         
     },[data])
+
+    console.log(sent)
     
     return(
         <>

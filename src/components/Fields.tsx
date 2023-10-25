@@ -1,7 +1,7 @@
 import { FastField, ErrorMessage, useFormikContext } from "formik";
 import { useState } from "react";
 import { inputProps } from "./Types";
-import { fileProps } from "./Types";
+// import { fileProps } from "./Types";
 
 export const Input = ({ name, label, type, required }: inputProps) => {
   const [hide, sethide] = useState(type);

@@ -2,13 +2,14 @@ import image from "../Images/unsplash_IH7wPsjwomc.png";
 import url from "../Images/stockphoto.jpg";
 //import imagee from "../Images/Rectangle 5.jpg"
 import { Link } from "react-router-dom";
-import { Get } from "./Axiosoperations";
+// import { Get } from "./Axiosoperations";
 import { productProps, User } from "./Types";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {API} from ".././controller/api"
 import Spinner from "react-bootstrap/Spinner";
-import { ToastContainer, toast } from "react-toastify";
+// import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 export const Home = () => {
   const navigate = useNavigate();
 

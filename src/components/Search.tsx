@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState,useEffect } from "react";
 import {useParams} from "react-router-dom";
 import { API } from "../controller/api";
@@ -7,7 +8,7 @@ import { User } from "./Types";
 import Spinner from 'react-bootstrap/Spinner';
 import { ToastContainer, toast } from "react-toastify";
 //import { loginContext, userContext } from "./usecontext";
-import { useNavigate,Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Search=()=>{
     const {idd}=useParams();

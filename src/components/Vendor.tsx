@@ -1,12 +1,13 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
-import { Input, Textarea, File } from "./Fields";
-import { Formik,FastField,ErrorMessage ,Form  } from "formik";
-import { User, vendorProps } from "./Types";
+import { Input, Textarea } from "./Fields";
+import { Formik, ErrorMessage ,Form  } from "formik";
+import { User } from "./Types";
 import { productProps } from "./Types";
 
 import Spinner from "react-bootstrap/Spinner";
-import * as Yup from "yup";
+// import * as Yup from "yup";
 
 import { API } from "../controller/api";
 
@@ -96,7 +97,7 @@ export const Vendor = () => {
     <Steptwo next={handleNext} dataa={initial} prev={handlePrev} />,
   ];
 
-  const validate = Yup.object({});
+  // const validate = Yup.object({});
 
   const getVendorItems = async () => {
     try {
@@ -345,7 +346,7 @@ const Steptwo = ({ next, dataa, prev }: stepTwoProps) => {
             </label>
         
           <input onChange={(e : React.FormEvent<HTMLInputElement>)=>{
-            const targett = e.target as HTMLInputElement
+            // const targett = e.target as HTMLInputElement
             formikprops.setFieldValue("imageUrl", e.currentTarget.files?[0]: null)
             console.log(e)
             

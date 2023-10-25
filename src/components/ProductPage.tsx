@@ -1,6 +1,6 @@
-import axios from "axios";
+// import axios from "axios";
 import { useState,  useEffect } from "react";
-import { Get } from "./Axiosoperations";
+// import { Get } from "./Axiosoperations";
 import url from "../Images/stockphoto.jpg"
 import { productProps } from "./Types";
 import { User } from "./Types";
@@ -9,7 +9,7 @@ import ReactPaginate from "react-paginate"
 import Spinner from 'react-bootstrap/Spinner';
 import { ToastContainer, toast } from "react-toastify";
 //import { loginContext, userContext } from "./usecontext";
-import { useNavigate,Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 //toast.configure();
 export const Productpage = () => {

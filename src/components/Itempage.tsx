@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 
 import { API } from "../controller/api";
-import {Container,Row,Col} from "react-bootstrap";
+// import {Container,Row,Col} from "react-bootstrap";
 export const Itempage=()=>{
     const {id} = useParams()
     const getItem=async()=>{

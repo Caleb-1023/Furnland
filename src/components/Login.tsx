@@ -1,7 +1,7 @@
 import { Styleprops } from "./Style";
 import { Formik, Form } from "formik";
 import { Input } from "./Fields";
-import axios from "axios";
+// import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 import {API} from ".././controller/api"
